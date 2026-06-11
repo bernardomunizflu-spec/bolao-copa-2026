@@ -1,0 +1,154 @@
+.page { min-height: calc(100vh - 56px); padding: 24px 16px; }
+.inner { max-width: 680px; margin: 0 auto; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.count {
+  background: var(--bg3);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 1px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.empty { color: var(--muted); font-size: 14px; }
+
+.userRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.userRow:last-child { border-bottom: none; }
+.userName { font-weight: 600; }
+.userApelido { color: var(--muted); font-size: 13px; }
+
+.btnAprovar {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background .15s;
+}
+.btnAprovar:hover { background: var(--green2); }
+
+.userRowSimple {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: #c0d4e8;
+}
+.userRowSimple:last-child { border-bottom: none; }
+
+/* Grupos tabs */
+.grupoTabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.tab {
+  background: var(--bg3);
+  border: none;
+  color: var(--muted);
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.tab:hover { color: var(--text); }
+.tabActive {
+  background: rgba(245,197,24,.15);
+  border: none;
+  color: var(--gold);
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Jogo row */
+.jogoRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.jogoRow:last-child { border-bottom: none; }
+.jogoFlag { font-size: 20px; flex-shrink: 0; }
+.jogoTime { font-size: 12px; color: var(--muted); width: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jogoVs { color: var(--muted); font-weight: 700; }
+
+.resInput {
+  width: 42px;
+  height: 36px;
+  text-align: center;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+}
+.resInput:focus { border-color: var(--blue); }
+.resFilled { border-color: var(--green); color: var(--green); background: rgba(34,197,94,.06); }
+
+.resDone {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.jogoLabel2 {
+  background: var(--bg);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.btnExcluir {
+  background: rgba(239,68,68,.1);
+  color: #ef4444;
+  border: 1px solid rgba(239,68,68,.3);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+.btnExcluir:hover { background: rgba(239,68,68,.2); }

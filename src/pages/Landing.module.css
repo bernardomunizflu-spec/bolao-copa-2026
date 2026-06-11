@@ -1,0 +1,116 @@
+.page { min-height: calc(100vh - 56px); }
+
+.hero {
+  background: linear-gradient(160deg, #071428 0%, #0a1e3a 60%, #0d2a1a 100%);
+  padding: 72px 20px 60px;
+  text-align: center;
+}
+.heroInner { max-width: 600px; margin: 0 auto; }
+
+.badge {
+  display: inline-block;
+  background: rgba(245,197,24,.12);
+  color: var(--gold);
+  border: 1px solid rgba(245,197,24,.3);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 10vw, 72px);
+  font-weight: 900;
+  line-height: 1.0;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+.gold  { color: var(--gold); }
+.green { color: var(--green); }
+
+.sub {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+
+.btnPrimary {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background .15s, transform .1s;
+}
+.btnPrimary:hover { background: var(--green2); transform: translateY(-1px); }
+
+.btnSecondary {
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  padding: 11px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background .15s;
+}
+.btnSecondary:hover { background: rgba(245,197,24,.08); }
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.stat  { text-align: center; }
+.statNum {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.statLabel {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+/* How it works */
+.how {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 24px;
+  text-align: center;
+}
+.steps { display: flex; flex-direction: column; gap: 12px; }
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+}
+.stepIcon { font-size: 28px; flex-shrink: 0; }
+.step strong { display: block; font-weight: 700; margin-bottom: 4px; }
+.step p { color: var(--muted); font-size: 14px; }

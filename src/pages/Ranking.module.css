@@ -1,0 +1,95 @@
+.page { min-height: calc(100vh - 56px); padding: 24px 16px; }
+.inner { max-width: 640px; margin: 0 auto; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.vazio {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 8px;
+  transition: border-color .15s;
+}
+.card:hover { border-color: #2a4a7a; }
+
+.first {
+  background: linear-gradient(135deg, #1a2a4a, #1e3a1a);
+  border-color: var(--gold);
+}
+
+.eu { border-color: var(--green) !important; }
+
+.pos { font-size: 28px; width: 36px; text-align: center; flex-shrink: 0; }
+.posNum { font-family: var(--font-display); font-size: 16px; font-weight: 800; color: var(--muted); }
+
+.info { flex: 1; min-width: 0; }
+.nome { font-weight: 700; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+.badge {
+  background: rgba(34,197,94,.15);
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+.detalhe { color: var(--muted); font-size: 12px; margin-top: 3px; }
+
+.pontos { text-align: right; flex-shrink: 0; }
+.pts {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--text);
+  line-height: 1;
+}
+.ptsGold { color: var(--gold); }
+.ptsLabel { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+
+/* Tabela de pontuação */
+.tabela {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 24px;
+}
+.tabelaTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.tabelaRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: #c0d4e8;
+}
+.tabelaRow:last-child { border-bottom: none; }
+.tabelaPts { color: var(--gold); font-weight: 700; }
