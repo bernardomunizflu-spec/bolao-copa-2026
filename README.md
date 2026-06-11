@@ -19,7 +19,7 @@ Aplicação de bolão para Copa do Mundo 2026 entre amigos.
 9. Clique na engrenagem (⚙️) → **Configurações do projeto**
 10. Role até "Seus apps" → clique no ícone **`</>`** (Web)
 11. Dê um apelido (ex: `bolao`) → Registrar app
-12. **Copie o objeto `firebaseConfig`** que aparece — você vai precisar no próximo passo 
+12. **Copie o objeto `firebaseConfig`** que aparece — você vai precisar no próximo passo  
 
 ### PASSO 2 — Configurar as credenciais no projeto
 
